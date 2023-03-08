@@ -1,0 +1,9 @@
+download  and install node 
+//https://nodejs.org/en/
+
+download  and install visual studio 
+https://code.visualstudio.com/
+
+create a folder and open with visual studio code 
+add a file with script.js extension 
+run the file with node fileName.js
