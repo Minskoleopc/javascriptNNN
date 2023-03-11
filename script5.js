@@ -188,6 +188,134 @@ let q15 = numberss.filter(function(el){
 console.log(q14)
 console.log(q15)
 
+// map() , filter() , reduce() , forEach()
+// some() , every() , find() , findIndex()
+
+//               0     1    2    3
+let birthYears= [1989,1990,1991,1990]
+// [34,33,32,31]
+let agess = []
+
+for(let i = 0 ; i < birthYears.length ; i++){
+    //console.log(i)
+   // console.log(2023 - birthYears[i])
+    let t = 2023 - birthYears[i]
+    agess.push(t)
+
+}
+console.log(agess)
+birthYears= [1989,1990,1991,1990]
+let q111 = birthYears.map(function(el,index,arr){
+    //console.log(el,index,arr)
+    return 2023 - el
+})
+console.log(q111)
+
+
+// filter 
+//           0   1  2  3  4  5  6  7  8
+let mrks  = [45,66,77,33,88,99,44,55,88]
+let above70 = []
+
+for(let i = 0 ; i < mrks.length ; i++){
+   // console.log(i)
+   // console.log(mrks[i])
+   if(mrks[i] > 70){
+    above70.push(mrks[i])
+   }
+}
+console.log(above70)
+let q222 = mrks.filter(function(el,index,arr){
+    return el > 70
+})
+console.log(q222)
+
+
+// reduce
+
+let na = [11,22,33] // 11 + 22 + 33  ===> 66
+let ttl = 0
+
+for(let i = 0 ; i < na.length ; i++){
+    //console.log(i)
+    //console.log(na[i])
+    ttl = ttl + na[i]
+    //     0  +  11   ====> 11
+    //     11 +  22   ====> 33
+    //     33 +  33   ====> 66
+}
+console.log(ttl)
+let q333 = na.reduce(function(acc,el,index,arr){
+    return el + acc // 33
+},5)
+console.log(q333)
+
+// forEach()
+let nms = ["chinmay","ram","shirish","satish"]
+for(let i = 0 ; i < nms.length ; i++){
+    console.log("welcome "+ nms[i])
+}
+
+// map()
+// filter()
+// reduce()
+// forEach()
+
+nms.forEach(function(el,index,arr){
+    console.log("welcome "+ el)
+})
+
+
+let ii  = [444,548,555,333,555,888,999,222,555,66]
+let ii2 = ii.filter(function(el,index,arr){
+    return el > 500
+})
+console.log(ii2)
+
+
+let ii22 = ii.find(function(el,index,arr){
+    return el > 500
+})
+console.log(ii22)
+
+let ii222 = ii.findIndex(function(el,index,arr){
+    return el > 500
+})
+console.log(ii222)
+
+
+let jjj = [3,44,22,33,55,88,99]
+// true
+let www = jjj.every(function(el,index,arr){
+    return el > 10
+})
+console.log(www)
+
+let jj2 = [3,44,22,33,55,88,99]
+
+let wwwe = jj2.some(function(el,index,arr){
+    return el > 100
+})
+console.log(wwwe)
+
+
+
+
+// 7pm ist // oops
+
+// 8pm ist 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
