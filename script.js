@@ -100,9 +100,9 @@ console.log(q22)
 // let q33 = sub2(20,10)
 // console.log(q33)
 
-let sub2 = (x,y)=>x - y
-let q33 = sub2(20,10)
-console.log(q33)
+// let sub2 = (x,y)=>x - y
+// let q33 = sub2(20,10)
+// console.log(q33)
 
 
 

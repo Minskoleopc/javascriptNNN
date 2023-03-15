@@ -1,0 +1,10 @@
+.fruit {
+    color:red;
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
+
+#one {
+    border: 1px solid green;
+}

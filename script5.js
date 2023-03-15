@@ -299,8 +299,6 @@ let wwwe = jj2.some(function(el,index,arr){
 console.log(wwwe)
 
 
-
-
 // 7pm ist // oops
 
 // 8pm ist 
